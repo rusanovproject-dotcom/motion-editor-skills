@@ -1,0 +1,11 @@
+import React from 'react';
+import {Composition, registerRoot} from 'remotion';
+import {SceneKit, SceneConfig, isKnownStyle} from './SceneKit';
+import raw from './scene.json';
+const config = raw as SceneConfig;
+if (!isKnownStyle(config.style)) throw new Error('Unknown scene style');
+if (!config.labels || config.labels.length < 3 || config.labels.some(x => typeof x !== 'string')) throw new Error('scene.labels needs at least three strings');
+if (!['fullscreen','lower-panel'].includes(config.layout)) throw new Error('Invalid layout');
+if (config.panel && (![config.panel.x,config.panel.y,config.panel.width,config.panel.height].every(Number.isFinite) || config.panel.x < 0 || config.panel.y < 0 || config.panel.width <= 0 || config.panel.height <= 0 || config.panel.x + config.panel.width > 1 || config.panel.y + config.panel.height > 1)) throw new Error('panel must stay within normalized frame bounds');
+const Root: React.FC = () => <Composition id="MotionScene" component={SceneKit} width={config.width} height={config.height} fps={config.fps} durationInFrames={Math.max(1, Math.round(config.duration * config.fps))} defaultProps={config}/>;
+registerRoot(Root);

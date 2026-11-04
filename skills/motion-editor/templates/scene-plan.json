@@ -1,0 +1,59 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 6,
+  "timebase": "output",
+  "timing_status": "provisional",
+  "allow_fullscreen": false,
+  "protected_regions": [
+    {
+      "id": "face",
+      "box": [
+        0.28,
+        0.05,
+        0.48,
+        0.46
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "handoff",
+      "start": 0,
+      "end": 6,
+      "anchor": {
+        "phrase": "задачи делает агент",
+        "occurrence": 1,
+        "timebase": "output",
+        "status": "provisional"
+      },
+      "meaning": "задача переходит от ручной работы к агенту и человеку на проверку",
+      "action": "лист с задачей входит в монитор; из монитора выходит готовый лист; штамп проверки",
+      "style": "paper-collage",
+      "layout": "lower-panel",
+      "box": [
+        0.06,
+        0.57,
+        0.88,
+        0.29
+      ],
+      "assets": [
+        {
+          "id": "task-paper",
+          "status": "approximation"
+        },
+        {
+          "id": "agent-screen",
+          "status": "approximation"
+        }
+      ],
+      "verification": [
+        "лицо не перекрыто",
+        "предмет передаётся между состояниями",
+        "слова читаются до следующей смены"
+      ]
+    }
+  ],
+  "note": "Синтетический пример структуры. Тайминг демонстрационный, не синхронизация с реальным исходником."
+}

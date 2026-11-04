@@ -1,0 +1,30 @@
+[
+  {
+    "query": "Оформи мой разговорный видос анимациями как в этих референсах",
+    "should_trigger": true
+  },
+  {
+    "query": "Повтори эту motion-сцену максимально близко, хочу менять текст",
+    "should_trigger": true
+  },
+  {
+    "query": "Сделай новую анимированную объяснялку в таком бумажном стиле",
+    "should_trigger": true
+  },
+  {
+    "query": "Обрежь первые две секунды видео",
+    "should_trigger": false
+  },
+  {
+    "query": "Сожми MP4 для Telegram",
+    "should_trigger": false
+  },
+  {
+    "query": "Напиши сценарий разговора с клиентом",
+    "should_trigger": false
+  },
+  {
+    "query": "Добавь обычные субтитры без оформления",
+    "should_trigger": false
+  }
+]

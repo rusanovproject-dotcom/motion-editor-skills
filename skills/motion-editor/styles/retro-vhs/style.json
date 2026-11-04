@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "retro-vhs",
+  "name": "Ретро-реклама VHS",
+  "aliases": [
+    "Tamagotchi",
+    "R12",
+    "R12-tamagotchi"
+  ],
+  "keywords": [
+    "VHS",
+    "пиксельный экран",
+    "ретро-реклама",
+    "неоновая сетка",
+    "виртуальный питомец",
+    "LCD"
+  ],
+  "skill": "SKILL.md",
+  "renderer": "Scene.tsx",
+  "defaults": {
+    "accent": "#ffd52e",
+    "title": "Задача становится результатом",
+    "subtitle": "Пиксельная история",
+    "labels": [
+      "ПОЛУЧЕНО",
+      "В РАБОТЕ",
+      "ГОТОВО"
+    ]
+  },
+  "capabilities": [
+    "fullscreen",
+    "lower-panel"
+  ],
+  "version": "1.0"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "clean-editorial",
+  "name": "Clean Editorial — светлая предметная объяснялка",
+  "aliases": [
+    "Bubble Wrap",
+    "R4",
+    "R4-bubble-wrap",
+    "clean editorial"
+  ],
+  "keywords": [
+    "светлая предметная объяснялка",
+    "чистая типографика",
+    "круговой текст",
+    "диск-переход",
+    "минималистичная инфографика"
+  ],
+  "skill": "SKILL.md",
+  "renderer": "Scene.tsx",
+  "defaults": {
+    "accent": "#4263eb",
+    "title": "Идея становится продуктом",
+    "subtitle": "Смысл → действие → результат",
+    "labels": [
+      "Идея",
+      "Продукт",
+      "Готово"
+    ]
+  },
+  "capabilities": [
+    "fullscreen",
+    "lower-panel"
+  ],
+  "version": "1.0"
+}
