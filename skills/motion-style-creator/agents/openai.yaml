@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motion Style Creator"
+  short_description: "Создать и подключить новый стиль анимации"
+  default_prompt: "Используй motion-style-creator: разработай самостоятельный стиль по моим референсам или описанию, проверь рендеры и подключи к motion-editor."

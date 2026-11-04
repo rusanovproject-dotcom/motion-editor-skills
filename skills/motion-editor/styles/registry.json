@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "styles": [
+    "clean-editorial/style.json",
+    "paper-collage/style.json",
+    "retro-vhs/style.json"
+  ]
+}
